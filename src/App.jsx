@@ -14,7 +14,7 @@ function App() {
         <NavLink to="/Repositories">Repositories</NavLink>
       </header>
       <Routes>
-        <Route path="/Converter" element={<Converter />} />
+        <Route path="/" element={<Converter />} />
         <Route path="/books" element={<Books />} />
         <Route path="/repositories" element={<Repositories />} />
         <Route path="*" element={<ErrorPage />} />
