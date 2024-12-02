@@ -9,12 +9,13 @@ function App() {
   return (
     <div>
       <header className="flex h-10 py-4 items-center bg-teal-800 gap-4 mx-auto px-auto justify-center ">
-        <NavLink to="/Converter">Converter</NavLink>
+        <NavLink to="/">Converter</NavLink>
         <NavLink to="/Books">Books</NavLink>
         <NavLink to="/Repositories">Repositories</NavLink>
       </header>
       <Routes>
         <Route path="/" element={<Converter />} />
+        <Route path="/converter" element={<Converter />} />
         <Route path="/books" element={<Books />} />
         <Route path="/repositories" element={<Repositories />} />
         <Route path="*" element={<ErrorPage />} />
